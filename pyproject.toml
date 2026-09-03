@@ -1,0 +1,6 @@
+[tool.ruff]
+line-length = 120
+exclude = ["tests", "env", "migrations"]
+
+[tool.ruff.lint]
+ignore = ["E", "F", "I", "UP", "B", "DTZ"]
