@@ -65,8 +65,7 @@ class DevConfig(Config):
 
     SQLALCHEMY_DATABASE_URI = 'sqlite:///../database.db'
 
-    CACHE_TYPE = 'SimpleCache'
-    # Don't do anything fancy with the assets pipeline (faster + easier to debug)
+    CACHE_TYPE = 'simple'    # Don't do anything fancy with the assets pipeline (faster + easier to debug)
     ASSETS_DEBUG = True
     # Run jobs instantly, without needing to spin up a worker
     RQ_ASYNC = False
@@ -79,8 +78,8 @@ class TestConfig(Config):
     ENV = 'test'
     DEBUG = True
     DEBUG_TB_INTERCEPT_REDIRECTS = False
-    db_file = tempfile.NamedTemporaryFile()
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + db_file.name
+    db_file = tempfile.mktemp(suffix='.db')
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + db_file
     SQLALCHEMY_ECHO = False  # Optionally enable if you want to see database actions
     ASSETS_DEBUG = True
 

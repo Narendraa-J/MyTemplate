@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests and coverage
+        run: |
+          mkdir -p reports
+          pytest --junitxml=reports/junit.xml --cov=appname --cov-report=xml:reports/coverage.xml --cov-report=html:reports/htmlcov
+
+      - name: Run Ruff
+        run: ruff check appname tests --output-format=json > reports/ruff.json || true
+
+      - name: Run Bandit
+        run: bandit -r appname -f json -o reports/bandit.json || true
