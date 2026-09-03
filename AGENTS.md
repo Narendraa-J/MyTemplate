@@ -16,7 +16,7 @@ Primary package: `appname/`
 ## Fast Start (Local Development)
 
 ```bash
-cd /Users/sumukh/code/Ignite
+cd MyTemplate
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
