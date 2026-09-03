@@ -2,7 +2,7 @@
 
 # Ignite for Flask [![Flask PyTest CI](https://github.com/Sumukh/Ignite/actions/workflows/flask-pytest.yml/badge.svg)](https://github.com/Sumukh/Ignite/actions/workflows/flask-pytest.yml)
 
-Ignite is a scaffold for starting new SaaS applications built using Python and Flask. It takes care of the boilerplate code (like User Registration, OAuth, Teams, and Billing), allowing you to focus on building your application. Ignite is built upon best practices for modern Flask applications.
+MyTemplate is a scaffold for starting new SaaS applications built using Python and Flask. It takes care of the boilerplate code (like User Registration, OAuth, Teams, and Billing), allowing you to focus on building your application. MyTemplate is built upon best practices for modern Flask applications.
 
 ## Features
 
@@ -21,7 +21,7 @@ Ignite is a scaffold for starting new SaaS applications built using Python and F
 | Basic Test Suite                      | ✅                                           | Starting point for you to build out tests                                                  |
 | VS Code Debugger & Editor             | ✅                                           | Configured to make you productive                                                          |
 | Tested on Windows 10, OSX, and Ubuntu | ✅                                           | Using Python 3                                                                             |
-| SaaS Recurring Billing                | 💲 (Requires purchasing a license to Ignite) | Team Billing, Usage Based Billing or Unlimited Plans                                       |
+| SaaS Recurring Billing                | 💲 (Requires purchasing a license to MyTemplate) | Team Billing, Usage Based Billing or Unlimited Plans                                       |
 | Commercial Usage                      | 💲 (License Required)                        | Commercial Usage requires a purchased license                                              |
 | Video Content                         | 💲                                           | Available as part of [the Fullstack Flask course](https://www.newline.co/fullstack-flask/) |
 
@@ -29,7 +29,7 @@ Ignite is a scaffold for starting new SaaS applications built using Python and F
 
 | Store                  | Comes With                                                                                                                     | Price                                                                       |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
-| Fullstack Flask Course | The Fullstack Flask Course & Book, hours of videos explaining how to build a SaaS in Flask, and a single license to Ignite Pro | [On Sale (for ~$199) at Newline »](https://www.newline.co/fullstack-flask/) |
+| Fullstack Flask Course | The Fullstack Flask Course & Book, hours of videos explaining how to build a SaaS in Flask, and a single license to MyTemplate Pro | [On Sale (for ~$199) at Newline »](https://www.newline.co/fullstack-flask/) |
 | Commercial License     | A license for usage on a single site                                                                                           | [($199) »](https://gumroad.com/l/xFvLo)                                     |
 
 ## Setup
@@ -91,7 +91,7 @@ You may also want to change some of the constants in `appname.constants` and the
 
 ## Deployment
 
-Ignite is not tied to a specific platform for deployment, but it works well on [Heroku](http://heroku.com) and [Dokku](http://dokku.viewdocs.io/dokku/) with minimal configuration.
+MyTemplate is not tied to a specific platform for deployment, but it works well on [Heroku](http://heroku.com) and [Dokku](http://dokku.viewdocs.io/dokku/) with minimal configuration.
 
 It is also designed to work well on other cloud providers such as AWS, Google Cloud, and DigitalOcean.
 
@@ -123,7 +123,7 @@ Documentation is currently provided for installations on Dokku.
 
 ## License
 
-This is a commercial product. You may purchase a license for commercial use at [Ignite Website](https://ignite.sumukh.me)
+This is a commercial product. You may purchase a license for commercial use at [MyTemplate Website](https://ignite.sumukh.me)
 
 Here's a summary:
 

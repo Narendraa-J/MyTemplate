@@ -4,7 +4,7 @@ This file is a practical runbook for AI coding agents working in this repository
 
 ## What This Repo Is
 
-Ignite is a Flask starter app with:
+MyTemplate is a Flask starter app with:
 - Auth (email/password + Google OAuth)
 - Team/membership model
 - Billing hooks (Stripe)
